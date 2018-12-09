@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js" type="application/javascript"></script>
+    <script src="js/bootstrap.js" type="application/javascript"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+
+    <header class="container-fluid bg-light border-bottom border-dark">
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <div class="row">
+                         <div class="col">
+                             <button type="button" class="btn btn-outline-primary singIn" data-toggle="modal" data-target="#signInModalCenter">Sign in</button>
+                         </div>
+                         <div class="col">
+                             <button type="button" class="btn btn-outline-primary">Sign up</button>
+                         </div>
+                    </div>
+                </form>
+
+            </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 bg-black"></div>
+            <div class=" bg-grey col-2"></div>
+        </div>
+    </div>
+    <div class="modal fade" id="signInModalCenter" tabindex="-1" role="dialog"aria-labelledby="signInModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signInModalCenterTitle">Sign in</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="InputEmail">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword">Password</label>
+                            <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="SignInCheck">
+                            <label class="form-check-label" for="SignInCheck">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
